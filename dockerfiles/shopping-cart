@@ -1,0 +1,9 @@
+FROM miuedu/ecomm-shopping-cart
+
+WORKDIR .
+
+COPY ./sh/shopping-cart.sh ./shopping-cart.sh
+
+RUN ls -lsa
+
+RUN chmod 755 ./shopping-cart.sh

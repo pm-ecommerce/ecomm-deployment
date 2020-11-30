@@ -1,0 +1,9 @@
+FROM miuedu/ecomm-account
+
+WORKDIR .
+
+COPY ./sh/account.sh ./account.sh
+
+RUN ls -lsa
+
+RUN chmod 755 ./account.sh

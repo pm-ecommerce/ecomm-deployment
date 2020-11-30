@@ -1,0 +1,9 @@
+FROM miuedu/ecomm-eureka
+
+WORKDIR .
+
+COPY ./sh/eureka.sh ./eureka.sh
+
+RUN ls -lsa
+
+RUN chmod 755 ./eureka.sh

@@ -1,0 +1,9 @@
+FROM miuedu/ecomm-email-sender
+
+WORKDIR .
+
+COPY ./sh/email-sender.sh ./email-sender.sh
+
+RUN ls -lsa
+
+RUN chmod 755 ./email-sender.sh

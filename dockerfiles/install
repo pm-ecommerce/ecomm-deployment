@@ -1,0 +1,11 @@
+FROM mysql
+
+RUN apt update && apt install -y ncat
+
+WORKDIR .
+
+COPY ./sh/install.sh ./install.sh
+
+RUN ls -lsa
+
+RUN chmod 755 ./install.sh

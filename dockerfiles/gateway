@@ -1,0 +1,9 @@
+FROM miuedu/ecomm-gateway
+
+WORKDIR .
+
+COPY ./sh/gateway.sh ./gateway.sh
+
+RUN ls -lsa
+
+RUN chmod 755 ./gateway.sh

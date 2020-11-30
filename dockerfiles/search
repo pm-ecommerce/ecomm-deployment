@@ -1,0 +1,9 @@
+FROM miuedu/ecomm-search
+
+WORKDIR .
+
+COPY ./sh/search.sh ./search.sh
+
+RUN ls -lsa
+
+RUN chmod 755 ./search.sh

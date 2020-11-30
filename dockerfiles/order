@@ -1,0 +1,10 @@
+FROM miuedu/ecomm-order
+
+WORKDIR .
+
+COPY ./sh/order.sh ./order.sh
+
+RUN ls -lsa
+
+RUN chmod 755 ./order.sh
+

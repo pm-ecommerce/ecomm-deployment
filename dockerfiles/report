@@ -1,0 +1,9 @@
+FROM miuedu/ecomm-report
+
+WORKDIR .
+
+COPY ./sh/report.sh ./report.sh
+
+RUN ls -lsa
+
+RUN chmod 755 ./report.sh

@@ -1,0 +1,9 @@
+FROM miuedu/ecomm-product
+
+WORKDIR .
+
+COPY ./sh/product.sh ./product.sh
+
+RUN ls -lsa
+
+RUN chmod 755 ./product.sh
